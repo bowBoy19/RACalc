@@ -98,8 +98,9 @@ public abstract class RACalc {
 
     public static int calc(int num1, int num2, char op){
         int result = 0;
-        if(num1 < 0 || num2 < 0){
+        if(num1 < 0 || num2 < 0 || num1 > 10 || num2 > 10){
             System.out.println("Неверыный ввод");
+            result = Integer.parseInt(null);
         }else{
             switch (op){
                 case '+' :
